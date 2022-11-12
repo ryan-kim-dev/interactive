@@ -15,9 +15,9 @@ function App() {
   };
 
   return (
-    <Main onMouseMove={positionSetter}>
+    <>
       <GlobalStyle />
-      <main>
+      <Main onMouseMove={positionSetter}>
         <H1>
           x: {cursorPosition.x} y: {cursorPosition.y}
         </H1>
@@ -26,8 +26,8 @@ function App() {
             transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
           }}
         />
-      </main>
-    </Main>
+      </Main>
+    </>
   );
 }
 
